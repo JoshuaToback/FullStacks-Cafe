@@ -1,28 +1,32 @@
-const { Gallery } = require('../models');
+const { Menuitems } = require('../models');
 
-const gallerydata = [
+const MenuData = [
   {
-    name: 'Printemps',
-    starting_date: 'April 20, 2021 07:00:00',
-    ending_date: 'June 21, 2021 17:00:00',
+    item_name: 'Avocado Toast',
+    Price: 14,
   },
   {
-    name: 'Sommer',
-    starting_date: 'June 22, 2021 09:00:00',
-    ending_date: 'September 22, 2021 22:00:00',
+    item_name: 'Eggs Benedict',
+    Price: 9,
   },
   {
-    name: 'Herfst',
-    starting_date: 'September 23, 2021 08:30:00',
-    ending_date: 'December 21, 2021 20:30:00',
+    item_name: 'Pancakes',
+    Price: 10,
   },
   {
-    name: 'Invierno',
-    starting_date: 'December 22, 2020 11:00:00',
-    ending_date: 'March 19, 2021 19:00:00',
+    item_name: 'Gravy & Biscuits',
+    Price: 8,
   },
+  {
+    item_name: 'Coffee',
+    Price: 5,
+  },
+  {
+    item_name: 'Orange Juice',
+    Price: 4,
+  }
 ];
 
-const seedGallery = () => Gallery.bulkCreate(gallerydata);
+const seedMenuitems = () => Menuitems.bulkCreate(MenuData);
 
-module.exports = seedGallery;
+module.exports = seedMenuitems;
