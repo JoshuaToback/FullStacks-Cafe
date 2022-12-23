@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Check Out</title>
 </head>
 <body>
-    
+
+    <div class="checkoutTop">
+
+        <div id="time">
+            <!-- Current time with Moments.js -->
+        </div>
+
+        <h2>Checkout</h2>
+    </div>
+
+
+
+    <section class="OrderSummary">
+
+        <div id="orderTable">
+            <!-- Order table created from selected items from menuItems Table
+            Uses console.table to display functionality -->
+
+            <h3 id="orderTotal"></h3>
+        </div>
+
+        <div id="placeOrder">
+            <button id="placeOrderBtn">Place Order </button>
+        </div>
+    </section>
+
+    <div id="bottomButton">
+        <!-- Button that returns to the menu in case of a misinput -->
+        <p>Forgot Something? Return to the Menu here!</p>
+        <a href='./home.html'><img src="/assets/Images/FullStacksLogo.png"></a>
+    </div>
+    <script src="/models/index.js"></script>
+
 </body>
 </html>

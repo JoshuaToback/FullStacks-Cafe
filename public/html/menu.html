@@ -9,6 +9,34 @@
     <title>Menu</title>
 </head>
 <body>
-    
+    <section class="MenuTop">
+        <div id="time">
+            <!-- Current time with Moments.js -->
+        </div>
+
+        <div id="Title">
+            <h1>Menu</h1>
+        </div>
+
+        <div id="cart">
+            <!-- Shopping cart, stores current entries in order Table -->
+            <ul class="cartOrder">
+
+            </ul>
+        </div>    
+
+    </section>
+
+    <div id="orderTotal">
+        <!-- Uses math to display order total based on items selected -->
+    </div>
+
+    <div id="finishOrder">
+        <button id="checkOut">
+            <!-- Calls function checkOut() to create Order Table and move to checkout.html -->
+            <a href="./checkout.html">Check Out</a>
+        </button>
+    </div>
+    <script src="/models/index.js"></script>
 </body>
 </html>
