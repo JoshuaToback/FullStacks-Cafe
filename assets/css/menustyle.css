@@ -1,15 +1,20 @@
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 400px;
   position: relative;
   margin: auto;
+  display: flex;
 }
 
-/* Hide the images by default */
-.mySlides {
-  /* display: none; */
+.menuItem {
+  display: none;
+}
+
+.menuItem img{
+  width: 400px;
+  height: auto;
+  vertical-align: middle;
 }
 
 /* Next & previous buttons */
@@ -18,8 +23,8 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -41,8 +46,10 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: white;
+  background-color: wheat;
+  font-weight: bold;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -59,22 +66,6 @@
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -82,6 +73,11 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
