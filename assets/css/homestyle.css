@@ -19,9 +19,42 @@ body {
     margin-top: 25px;
 }
 
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size:3.5em;
+  font-style: oblique;
+}
+
 #h1-header::before,
 #h1-header::after {
     content:"🥞";
+
+}
+
+button{
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+.btnanimation {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, black 0%, transparent 50%), 
+              linear-gradient(90deg, black 0%, transparent 50%), 
+              linear-gradient(0deg, black 0%, transparent 50%), 
+              linear-gradient(0deg, black 0%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  border-radius: 5px;
+  padding: 10px;
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+      background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
 }
 
 .home-carousel{
