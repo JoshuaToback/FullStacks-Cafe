@@ -5,9 +5,13 @@
     "console.table": "^0.10.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "handlebars": "^4.7.7",
     "inquirer": "^9.1.4",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.28.0"
+    "path": "^0.12.7",
+    "sequelize": "^6.28.0",
+    "uniqid": "^5.4.0"
   }
 }
