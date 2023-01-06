@@ -63,6 +63,14 @@ body {
   display: none;
 }
 
+.drinkItem img{
+  width: auto;
+  height: 300px;
+  vertical-align: middle;
+  transition: auto 0.2s;
+}
+
+
 .drinkItem img:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 
@@ -144,6 +152,11 @@ body {
 .cart img {
   width: auto;
   height: 350px;
+}
+
+#cancelOrder {
+  margin-top: 10px;
+  width: 40%;
 }
 
 
