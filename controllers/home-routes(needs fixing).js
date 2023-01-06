@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const { Gallery, Painting } = require('../models (old)');
 // TODO: Import the custom middleware
 
 // GET all galleries for homepage

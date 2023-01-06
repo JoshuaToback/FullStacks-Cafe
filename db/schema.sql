@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS orders_db;
-
-CREATE DATABASE orders_db;
+drop database if exists FullStackCafe;
+create database FullStackCafe;
