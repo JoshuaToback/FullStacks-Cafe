@@ -30,15 +30,17 @@ body {
   position: relative;
 }
 
-#plate{
+#plate img{
     height: 400px;
+    position: relative;
 }
 
-#orderList {
+.cart .orderList {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 999;
+  margin: 0 auto;
+  margin-left: 20vw;
+  top: 15%;
 }
 
 
