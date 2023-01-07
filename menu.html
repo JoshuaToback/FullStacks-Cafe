@@ -13,55 +13,41 @@
     <div class="fluid-container">
         <div class="row">
             <!-- Page Title -->
-            <div class="col-md-12">
-                <h1 class="bg-info text-lg text-center text-white rounded-pill">Let's set your plate!</h1>
+            <div class="col-12">
+                <h1 class="bg-info p-3 text-lg text-center text-black rounded-pill border border-dark border-3 mt-2">Let's set your plate!</h1>
             </div>
 
-            <div class="col-md-6">
-                <!-- Items added by Manager on Database -->
-                <h1 class="text-center">Manager's Picks</h1>
-                <ul class="ManagerItems">
-                    
-                </ul>
-            </div>
-
-            <!-- Cart -->
-           <div class="col-md-6">
-            <div class="card-header text-center"><h2>Your Plate</h2></div>
-            <div class="text-center cart">
-                <img id="plate" src="./images/your-current-plate.png">
-                <ul class="orderList"></ul>
-                
-            </div>
-           </div>
         </div>
+    </div>  
 
-        <br>
-
-        <div class="row">
-        
-          <!-- Drinks Menu   -->
-          <div class="col-md-4">
-            <h1 class="text-center drinkTitle rounded-pill">DRINKS</h1>
-
+    <div class="fluid-container">
+     <div class="row"> 
+        <!-- Drinks Menu   -->
+        <div class="col-md-4">
+         <h2 class="text-center drinkTitle rounded-pill border border-dark border-2">DRINKS</h2>
             <div class="slideshow-container">
                 <!-- Menu Items with number and Description / Price -->
                 <div class="drinkItem">
                      <div class="numbertext">1 / 3</div>
-                     <img id="coffee" class='rounded-circle border border-white rounded-lg' src="images/Coffee.jpg" style="width:100%">
-                    <div class="text">Coffee | $2.39</div>
+
+                     <img class='rounded-circle border border-white rounded-lg' src="images/Coffee.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Coffee | $2.39</div>
+
                 </div>
 
                 <div class="drinkItem"> 
                     <div class="numbertext">2 / 3</div>
-                    <img id="orangeJuice" class='rounded-circle border border-white rounded-lg' src="images/OrangeJuice.jpg" style="width:100%">
-                    <div class="text">Orange Juice | $1.99</div>
+                    <img class='rounded-circle border border-white rounded-lg' src="images/OrangeJuice.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Orange Juice | $1.99</div>
+
                 </div>
 
                 <div class="drinkItem">
                     <div class="numbertext">3 / 3</div>
-                    <img id="milk" class='rounded-circle border border-white rounded-lg' src="images/Milk.jpg" style="width:100%">
-                    <div class="text">Milk | 1.99</div>
+
+                    <img  class='rounded-circle border border-white rounded-lg' src="images/Milk.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Milk | 1.99</div>
+
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -70,48 +56,45 @@
             </div>
         </div>
 
-            <div class="col-md-4">
-                <!-- Menu Container -->
-                <h1 class="text-center menuTitle rounded-pill">MAIN MENU</h1>
-                <div class="slideshow-container">
-                    <!-- Menu Items with number and Description / Price -->
-                    <div class="menuItem">
-                         <div class="numbertext">1 / 6</div>
-                         <img id="scrambledEggs" class='rounded-circle border border-white rounded-lg' src="images/Eggs.jpg" style="width:100%">
-                        <div class="text">Scrambled Eggs | $6.99</div>
-                    </div>
-  
-                    <div class="menuItem">
-                        <div class="numbertext">2 / 6</div>
-                        <img id="gravy" class='rounded-circle border border-white rounded-lg' src="images/GravyAndBiscuits.jpg" style="width:100%">
-                        <div class="text">Gravy and Biscuits | $5.99</div>
-                    </div>
-  
-                    <div class="menuItem">
-                        <div class="numbertext">3 / 6</div>
-                        <img id="avacadoToast" class='rounded-circle border border-white rounded-lg' src="images/AvacadoToast.jpeg" style="width:100%">
-                        <div class="text">Avacado Toast | 11.99</div>
-                    </div>
-
+        <div class="col-md-4">
+            <!-- Menu Container -->
+            <h2 class="text-center menuTitle rounded-pill border border-dark border-2">MAIN MENU</h2>
+            <div class="slideshow-container">
+                <!-- Menu Items with number and Description / Price -->
                 <div class="menuItem">
-                    <div class="numbertext">4 / 6</div>
-                    <img id="pancakes" class='rounded-circle border border-white rounded-lg' src="images/Pancakes.jpg" style="width:100%">
-                    <div class="text">Pancakes | 9.99</div>
+                    <div class="numbertext">1 / 6</div>
+                     <img class='rounded-circle border border-white rounded-lg' src="images/Eggs.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Scrambled Eggs | $6.99</div>
                 </div>
 
+                <div class="menuItem">
+                    <div class="numbertext">2 / 6</div>
+                     <img class='rounded-circle border border-white rounded-lg' src="images/GravyAndBiscuits.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Gravy and Biscuits | $5.99</div>
+                </div>
+                <div class="menuItem">
+                    <div class="numbertext">3 / 6</div>
+                     <img  class='rounded-circle border border-white rounded-lg' src="images/AvacadoToast.jpeg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Avacado Toast | 11.99</div>
+                </div>
+                    <div class="menuItem">
+                    <div class="numbertext">4 / 6</div>
+                     <img  class='rounded-circle border border-white rounded-lg' src="images/Pancakes.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Pancakes | 9.99</div>
+
+                </div>
                 <div class="menuItem">
                     <div class="numbertext">5 / 6</div>
-                    <img id="frenchToast" class='rounded-circle border border-white rounded-lg' src="images/FrenchToast.jpg" style="width:100%">
-                    <div class="text">French Toast | 8.99</div>
-                </div>
+                     <img  class='rounded-circle border border-white rounded-lg' src="images/FrenchToast.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">French Toast | 8.99</div>
 
+                </div>
                 <div class="menuItem">
                     <div class="numbertext">6 / 6</div>
-                    <img id="omelette" class='rounded-circle border border-white rounded-lg' src="images/Omelette.jpg" style="width:100%">
-                    <div class="text">Omelette | 14.99</div>
+
+                     <img  class='rounded-circle border border-white rounded-lg' src="images/Omelette.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">Omelette | 14.99</div>
                 </div>
-  
-  
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -119,44 +102,65 @@
             </div>
 
 
-            <!-- Sides Menu -->
-            <div class="col-md-4">
-                <h1 class="text-center sideTitle rounded-pill">SIDES</h1>
-                <!-- List of Sides Offered -->
-                <div class="slideshow-container">
-                    <!-- Menu Items with number and Description / Price -->
-                    <div class="sideItem">
-                         <div class="numbertext">1 / 3</div>
-                         <img id="hashbrowns" class='rounded-circle border border-white rounded-lg' src="images/HashBrown.jpg" style="width:100%">
-                        <div class="text">Hashbrowns | $2.39</div>
-                    </div>
+        <!-- Sides Menu -->
+        <div class="col-md-4">
+            <!-- List of Sides Offered -->
+            <h2 class="text-center sideTitle rounded-pill border border-dark border-2">SIDES</h2>
+            <div class="slideshow-container">
+            <!-- Menu Items with number and Description / Price -->
+            <div class="sideItem">
+                <div class="numbertext">1 / 3</div>
+                 <img class='rounded-circle border border-white rounded-lg' src="images/HashBrown.jpg" style="width:100%">
+                <div class="text mt-1 border border-dark border-2">Hashbrowns | $2.39</div>
+            </div>
+            <div class="sideItem">
+                <div class="numbertext">2 / 3</div>
+                 <img class='rounded-circle border border-white rounded-lg' src="images/Bacon.jpg" style="width:100%">
+                <div class="text mt-1 border border-dark border-2">Bacon | $2.99</div>
+            </div>
+            <div class="sideItem">
+                <div class="numbertext">3 / 3</div>
+                 <img  class='rounded-circle border border-white rounded-lg' src="images/Toast.jpg" style="width:100%">
+                <div class="text mt-1 border border-dark border-2">Toast | 1.99</div>
+            </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSides(1)">&#10095;</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 text-center mt-5">
+                <h2 class="text-center text-white bg-danger rounded-pill border border-dark border-2">
+                    RETURN TO HOME
+                </h2>
+                <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
+                <p><em>*Press logo*</em></p>
+            </div>
     
-                    <div class="sideItem">
-                        <div class="numbertext">2 / 3</div>
-                        <img id="bacon" class='rounded-circle border border-white rounded-lg' src="images/Bacon.jpg" style="width:100%">
-                        <div class="text">Bacon | $2.99</div>
-                    </div>
-    
-                    <div class="sideItem">
-                        <div class="numbertext">3 / 3</div>
-                        <img id="toast" class='rounded-circle border border-white rounded-lg' src="images/Toast.jpg" style="width:100%">
-                        <div class="text">Toast | 1.99</div>
-                    </div>
-    
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSides(1)">&#10095;</a>
+             <div class="col-4 mt-5">
+                <h2 class="text-center text-black bg-white rounded-pill border border-dark border-2">
+                    YOUR PLATE
+                </h2>
+
+                <div class="text-center cart">
+                    <img src="images/your-current-plate.png">
                 </div>
             </div>
-         </div>
-
-         <br>
-         <div class="row">
-            <div class="col-md-4">
-                <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
-                <h1 class="text-center bg-danger text-white" id="cancelOrder">CANCEL ORDER</h1>
-            </div>
-            <div class="col-md-4">
+    
+            <div class="col-4 mt-5">
+                <h2 class="text-center text-white rounded-pill border border-dark border-2" id="whoscooking">WHO'S COOKING?</h2>
+                <div id="staff">
+                    <!-- Uses Employee Table(?) to Display Current Chefs. Will be implemented future -->
+                    <ul class="text-center" id="staffList">
+                        <li class="bacon">Joshua Toback</li>
+                        <li class="meat">David Stewart</li>
+                        <li class="fryingpan">Julia Johnson</li>
+                        <li class="knife">Josh Icard</li>
+                        <li class="chef">Mark Turner</li>
+                    </ul>
+                </div>
                 <div class="text-center" id="finishOrder">
                     <button type="button" class="btn-lg" id="checkOut">
                         <!-- Calls function checkOut() to create Order Table and move to checkout.html -->
@@ -164,18 +168,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-4">
-                <h1 class="text-center">WHO'S COOKING?</h1>
-                <div id="staff">
-                    <!-- Uses Employee Table(?) to Display Current Chefs. Will be implemented future -->
-                    <ul class="text-center" id="staffList">
-                        <li>Joshua Toback</li>
-                        <li>David Stewart</li>
-                    </ul>
-                </div>
-            </div>
-         </div>
-        
+        </div>
     </div>
 
     <script src="assets/js/menu.js"></script>

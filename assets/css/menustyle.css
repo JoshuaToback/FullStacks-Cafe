@@ -9,13 +9,17 @@
   
 }
 
+h1{
+  background-image: linear-gradient(90deg,yellow,rgb(236, 213, 183),yellow);
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
 .row {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -72,7 +76,7 @@ body {
 
 /* Drink Styling */
 .drinkTitle {
-  background-color: rgba(255, 77, 77, 0.7);
+  background-color: rgba(69, 192, 21, 0.7);
   color: white;
 }
 .drinkItem {
@@ -170,12 +174,6 @@ body {
   height: 350px;
 }
 
-#cancelOrder {
-  margin-top: 10px;
-  width: 40%;
-}
-
-
 #checkOut{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -192,6 +190,40 @@ body {
   background-color: white;
   color: goldenrod;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+#whoscooking{
+  background-color: gray;
+}
+
+.bacon::before,
+.bacon::after {
+    content:" 🥓 ";
+
+}
+
+.meat::before,
+.meat::after {
+    content:" 🥩 ";
+
+}
+
+.fryingpan::before,
+.fryingpan::after {
+    content:" 🍳 ";
+
+}
+
+.knife::before,
+.knife::after {
+    content:" 🔪 ";
+
+}
+
+.chef::before,
+.chef::after {
+    content:" 👨‍🍳 ";
+
 }
 
 /* Fading animation */
