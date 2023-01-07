@@ -112,7 +112,7 @@ div#carousel {
   }
   div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #ff70a6;
+    background-color: rgb(236, 213, 183);
     border: 5px solid black;
     border-radius: 5px;
   }
