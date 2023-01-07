@@ -1,5 +1,5 @@
-var minusCoffee = document.getElementById('minus-coffee-button');
-var plusCoffee = document.getElementById('coffee');
+var minusCoffee = document.getElementById('minus_coffee');
+var plusCoffee = document.getElementById('plus_coffee');
 var minusMilk = document.getElementById('minus-milk-button');
 var plusMilk = document.getElementById('plus-milk-button');
 var minusPancakes = document.getElementById('minus-pancakes-button');
@@ -31,6 +31,8 @@ function subtractCoffee() {
     localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
     updateOrderList();
 }
+
+
 
 //show order on page with l
 function updateOrderList() {
