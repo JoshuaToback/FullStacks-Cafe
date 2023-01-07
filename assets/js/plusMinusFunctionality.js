@@ -1,5 +1,5 @@
 var minusCoffee = document.getElementById('minus-coffee-button');
-var plusCoffee = document.getElementById('plus-coffee-button');
+var plusCoffee = document.getElementById('coffee');
 var minusMilk = document.getElementById('minus-milk-button');
 var plusMilk = document.getElementById('plus-milk-button');
 var minusPancakes = document.getElementById('minus-pancakes-button');
@@ -15,7 +15,7 @@ var checkoutButton = document.getElementById('checkout-button');
 plusCoffee.addEventListener('click', addCoffee);
 function addCoffee() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
-    var item = 'coffee';
+    var item = 'Coffee';
     var menuItem = {
         name: item
     }
@@ -44,20 +44,6 @@ console.log(orderItems)
 orderList.innerHTML = orderItems;
 }
 
-//When checkout button is clicked, client sends localstorage to server
-checkoutButton.addEventListener('click', test)
-function test() {
-const orderFromLocal = JSON.parse(localStorage.getItem('customerOrder'));
-const url = '/menu'
-    fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json; charset=UTF-8'
-        },
-        body: JSON.stringify(orderFromLocal)
-    })
-console.log(orderFromLocal)
-};
 
 
 
