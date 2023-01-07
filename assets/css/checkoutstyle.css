@@ -7,6 +7,10 @@ h1, h3, h4{
     text-shadow: 3px 2px 5px white;
 }
 
+.orderList {
+  list-style: none !important;
+}
+
 h1::before,
 h1::after {
     content:" 📜 ";

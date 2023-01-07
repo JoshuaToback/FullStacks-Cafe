@@ -28,24 +28,23 @@
             <div class="slideshow-container">
                 <!-- Menu Items with number and Description / Price -->
                 <div class="drinkItem">
-                     <div class="numbertext">1 / 3</div>
-
                      <img class='rounded-circle border border-white rounded-lg' src="images/Coffee.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Coffee | $2.39</div>
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-coffee-button" value="-"><em>Coffee | $2.39</em><input type="button" id="plus-coffee-button" value="+">
+                    </div>
 
                 </div>
 
                 <div class="drinkItem"> 
-                    <div class="numbertext">2 / 3</div>
-                    <img class='rounded-circle border border-white rounded-lg' src="images/OrangeJuice.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Orange Juice | $1.99</div>
+                    <img id="orangeJuice" class='rounded-circle border border-white rounded-lg' src="images/OrangeJuice.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-OJ-button" value="-"><em>Orange Juice | $1.99</em><input type="button" id="plus-OJ-button" value="+">
+                    </div>
 
                 </div>
 
                 <div class="drinkItem">
-                    <div class="numbertext">3 / 3</div>
-
-                    <img  class='rounded-circle border border-white rounded-lg' src="images/Milk.jpg" style="width:100%">
+                    <img id="milk" class='rounded-circle border border-white rounded-lg' src="images/Milk.jpg" style="width:100%">
                     <div class="text mt-1 border border-dark border-2">Milk | 1.99</div>
 
                 </div>
@@ -136,7 +135,7 @@
                     RETURN TO HOME
                 </h2>
                 <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
-                <p><em>*Press logo*</em></p>
+                <!-- <p><em>*Press logo*</em></p> -->
             </div>
     
              <div class="col-4 mt-5">
@@ -146,6 +145,9 @@
 
                 <div class="text-center cart">
                     <img src="images/your-current-plate.png">
+                    <div class="centered">
+                        <ul class="orderList"></ul>
+                    </div>
                 </div>
             </div>
     
