@@ -1,10 +1,12 @@
 var minusCoffee = document.getElementById('minus-coffee-button');
-var plusCoffee = document.getElementById('coffee');
-var minusMilk = document.getElementById('minus-milk-button');
+var plusCoffee = document.getElementById('plus-coffee-button');
+// var minusMilk = document.getElementById('minus-milk-button');
 var plusMilk = document.getElementById('plus-milk-button');
-var minusPancakes = document.getElementById('minus-pancakes-button');
+var plusOj = document.getElementById('plus-OJ-button');
+var minusOj = document.getElementById('minus-OJ-button');
+// var minusPancakes = document.getElementById('minus-pancakes-button');
 var plusPancakes = document.getElementById('plus-pancakes-button');
-var minusBacon = document.getElementById('minus-bacon-button');
+// var minusBacon = document.getElementById('minus-bacon-button');
 var plusBacon = document.getElementById('plus-bacon-button');
 var checkoutButton = document.getElementById('checkout-button');
 
@@ -26,11 +28,39 @@ function addCoffee() {
 minusCoffee.addEventListener('click', subtractCoffee);
 function subtractCoffee() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
-    var index = customerOrder.findIndex(o => o.name === 'coffee');
+    var index = customerOrder.findIndex(o => o.name === 'Coffee');
     var removed = index !== -1 && customerOrder.splice(index, 1);
     localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
     updateOrderList();
 }
+
+plusOj.addEventListener('click', addOj);
+function addOj() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
+    var item = 'Orange Juice';
+    var price = 1.99;
+    var menuItem = {
+        name: item,
+        cost: price
+    }
+    customerOrder.push(menuItem);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+minusOj.addEventListener('click', subtractOj);
+function subtractOj() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
+    var index = customerOrder.findIndex(o => o.name === 'Orange Juice');
+    // var removed = index !== -1 && customerOrder.splice(index, 1);
+    customerOrder.splice(index !== -1);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+
+
+
 
 //show order on page with l
 function updateOrderList() {
@@ -44,6 +74,7 @@ console.log(orderItems)
 orderList.innerHTML = orderItems;
 }
 
+window.onload = updateOrderList();
 
 
 

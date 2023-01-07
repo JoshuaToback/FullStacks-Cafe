@@ -168,12 +168,26 @@ body {
   top: 0;
 }
 
+.cart {
+  position: relative;
+  text-align: center;
+}
+
 
 .cart img {
   width: auto;
   height: 350px;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Checkout Stylings */
 #checkOut{
   margin-top: 20px;
   margin-bottom: 20px;
