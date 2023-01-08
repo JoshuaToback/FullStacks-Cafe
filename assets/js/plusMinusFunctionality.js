@@ -154,6 +154,76 @@ minusEggs.addEventListener('click', subtractEggs);
 function subtractEggs() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
     var index = customerOrder.findIndex(o => o.name === 'Scrambled Eggs');
+
+    var removed = index !== -1 && customerOrder.splice(index, 1);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+plusAvaToast.addEventListener('click', addAvaToast);
+function addAvaToast() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
+    var item = 'Avacado Toast';
+    var price = 11.99;
+    var menuItem = {
+        name: item,
+        cost: price
+    }
+    customerOrder.push(menuItem);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+minusAvaToast.addEventListener('click', subtractAvaToast);
+function subtractAvaToast() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
+    var index = customerOrder.findIndex(o => o.name === 'Avacado Toast');
+    var removed = index !== -1 && customerOrder.splice(index, 1);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+plusFrenchToast.addEventListener('click', addFrenchToast);
+function addFrenchToast() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
+    var item = 'French Toast';
+    var price = 8.99;
+    var menuItem = {
+        name: item,
+        cost: price
+    }
+    customerOrder.push(menuItem);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+minusFrenchToast.addEventListener('click', subtractFrenchToast);
+function subtractFrenchToast() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
+    var index = customerOrder.findIndex(o => o.name === 'French Toast');
+    var removed = index !== -1 && customerOrder.splice(index, 1);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+plusOmelette.addEventListener('click', addOmelette);
+function addOmelette() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
+    var item = 'Omelette';
+    var price = 14.99;
+    var menuItem = {
+        name: item,
+        cost: price
+    }
+    customerOrder.push(menuItem);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+minusOmelette.addEventListener('click', subtractOmelette);
+function subtractOmelette() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
+    var index = customerOrder.findIndex(o => o.name === 'Omelette');
     var removed = index !== -1 && customerOrder.splice(index, 1);
     localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
     updateOrderList();
@@ -315,12 +385,3 @@ orderList.innerHTML = orderItems;
 
 
 window.onload = updateOrderList();
-
-
-
-
-
-
-
-
-
