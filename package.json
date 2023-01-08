@@ -22,13 +22,14 @@
     "fs": "^0.0.1-security",
     "handlebars": "^4.7.7",
     "heroku": "^7.67.1",
-    "inquirer": "^8.0.0",
+    "inquirer": "^8.2.5",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "node": "^19.3.0",
+    "npm": "^9.2.0",
     "path": "^0.12.7",
     "sequelize": "^6.28.0",
     "uniqid": "^5.4.0",
-    "uuid": "^7.0.3"
+    "uuid": "^9.0.0"
   }
 }
