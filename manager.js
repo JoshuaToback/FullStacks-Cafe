@@ -113,12 +113,12 @@ const initPrompt = async () => {
 const recentOrder = async () => {
     console.log('Most Recent Order');
     try {
-        let query = 'SELECT * FROM FullStackCafe';
+        let query = 'SELECT * FROM order_details';
         connection.query(query, function (err, res) {
             if (err) throw err;
             let orderArray = [];
-            res.forEach(employee => employeeArray.push(employee));
-            console.table(employeeArray);
+            res.forEach(order_details => orderArray.push(order_details));
+            console.table(orderArray);
             initPrompt();
         });
     } catch (err) {
