@@ -84,11 +84,6 @@ h4 {
     font-family: 'Baloo Paaji 2', cursive;
     font-size: 1em;
   }
-
-  
-  .footer_section .footer-col {
-    margin-bottom: 30px;
-  }
   
   .footer_section .footer_contact .contact_link_box {
     display: flex;
@@ -138,4 +133,3 @@ h4 {
     font-family: 'Patrick Hand SC', cursive;
     font-size: 1em;
   }
-
