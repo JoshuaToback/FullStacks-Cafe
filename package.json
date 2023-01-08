@@ -1,4 +1,8 @@
 {
+  "name": "FullStacks_Cafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "seed": "node ./seeds/index.js",
