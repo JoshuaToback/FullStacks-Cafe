@@ -73,6 +73,20 @@ body {
   transition: auto 0.2s;
 }
 
+/* Button Styling */
+.removeItem {
+  background-color: red;
+  color: white;
+  border-radius: 30%;
+  width: 10%;
+}
+
+.addItem {
+  background-color: green;
+  color: white;
+  border-radius: 30%;
+  width: 10%;
+}
 
 /* Drink Styling */
 .drinkTitle {

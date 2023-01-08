@@ -4,7 +4,7 @@ function updateOrderList() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
     let orderItems = '';
     for (let orderItemName of customerOrder) {
-        orderItems += '<li>' + orderItemName.name + " " + orderItemName.cost + '</li>' + orderItems;
+        orderItems += '<li>' + orderItemName.name + " " + orderItemName.cost + '</li>';
     }
     console.log(orderItems)
     orderList.innerHTML = orderItems;
