@@ -33,6 +33,17 @@ ul {
   font-size: 1em;
 }
 
+h4 {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+.orderList {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 1em;
+  }
+
+
 .btn {
   font-family: 'Patrick Hand SC', cursive;
   font-size: 1.5em;
