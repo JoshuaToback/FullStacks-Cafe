@@ -33,29 +33,35 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 //app.use(routes);
 
-app.get('/menu', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/testOrderPage.html'))
+app.get('/checkout', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/checkout.html'))
 });
 
-app.post('/menu', (req, res) => {
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/home.html'))
+});
+
+app.get('/menu', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/menu.html'))
+});
+
+app.post('/checkout', (req, res) => {
     const order = req.body;
     const testArray = [];
       for (let key in order) {
         for (let key1 in order[key]) {
-            console.log((order[key][key1]))
             testArray.push((order[key][key1]))
         }
       }
-    console.log(testArray)
-    console.log(testArray[0]);
-      function createOrderTable() {
-        //sequelize.query('DROP TABLE order_details;')
-        sequelize.query('CREATE TABLE order_details (id INT AUTO_INCREMENT PRIMARY KEY,menu_item_name VARCHAR(255));')
+    testArrayOnlyItems = testArray.filter(x => isNaN(x))
+    console.log(testArrayOnlyItems)
+      async function createOrderTable() {
+        await sequelize.query('CREATE TABLE order_details (id INT AUTO_INCREMENT PRIMARY KEY, item_name VARCHAR(255));')
       }
       createOrderTable();
-      function seedOrderTable() {
-      for (let i = 0; i < testArray.length; i++)
-        sequelize.query(`INSERT INTO order_details (menu_item_name) VALUES ('${testArray[i]}');`)
+      async function seedOrderTable() {
+      for (let i = 0; i < testArrayOnlyItems.length; i++)
+        await sequelize.query(`INSERT INTO order_details (item_name) VALUES ('${testArrayOnlyItems[i]}');`)
       }
       seedOrderTable();
   }
