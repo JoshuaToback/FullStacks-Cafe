@@ -110,6 +110,42 @@ body {
 
 }
 
+.drinkItem .text,
+.menuItem .text,
+.sideItem .text {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+}
+
+.drinkTitle,
+.menuTitle,
+.sideTitle,
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
+}
+
+a {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1em;
+}
+
+.orderList {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1em;
+}
+
+#staffList {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+
 
 /* Side Images */
 .sideTitle {
