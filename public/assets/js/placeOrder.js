@@ -4,7 +4,7 @@ const placeOrder = document.getElementById('placeOrder');
 placeOrder.addEventListener('click', test)
 function test() {
 const orderFromLocal = JSON.parse(localStorage.getItem('customerOrder'));
-const url = '/menu'
+const url = '/checkout'
     fetch(url, {
         method: 'POST',
         headers: {

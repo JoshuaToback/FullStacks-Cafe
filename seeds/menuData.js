@@ -1,6 +1,6 @@
-const { Menuitems } = require('../models');
+const { Menu } = require('../Models/ModelsIndex');
 
-const MenuData = [
+const menuItems = [
   {
     item_name: 'Avocado Toast',
     Price: 11.99,
@@ -52,10 +52,9 @@ const MenuData = [
   {
     item_name: 'Toast',
     Price: 1.99,
-  },
-
+  }
 ];
 
-const seedMenuitems = () => Menuitems.bulkCreate(MenuData);
+const seedMenuItems = () => Menu.bulkCreate(menuItems);
 
-module.exports = seedMenuitems;
+module.exports = seedMenuItems;

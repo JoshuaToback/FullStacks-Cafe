@@ -154,7 +154,6 @@ minusEggs.addEventListener('click', subtractEggs);
 function subtractEggs() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
     var index = customerOrder.findIndex(o => o.name === 'Scrambled Eggs');
-
     var removed = index !== -1 && customerOrder.splice(index, 1);
     localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
     updateOrderList();

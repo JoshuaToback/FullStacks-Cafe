@@ -10,14 +10,14 @@ Menu.init({
         primaryKey: true,
         autoIncrement: true
     },
-    menu_item_name: {
+    item_name: {
         type: DataTypes.STRING,
         allowNull: false,
         primaryKey: true
     },
-    price: {
+    Price: {
         type: DataTypes.DECIMAL(4,2),
-        allowNull: false,
+        allowNull: false
     }
 }, {
     sequelize,
