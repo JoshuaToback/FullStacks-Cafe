@@ -183,6 +183,29 @@ function subtractAvaToast() {
     updateOrderList();
 }
 
+plusPancakes.addEventListener('click', addPancakes);
+function addPancakes() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
+    var item = 'Pancakes';
+    var price = 9.99;
+    var menuItem = {
+        name: item,
+        cost: price
+    }
+    customerOrder.push(menuItem);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
+minusPancakes.addEventListener('click', subtractPancakes);
+function subtractPancakes() {
+    var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
+    var index = customerOrder.findIndex(o => o.name === 'Pancakes');
+    var removed = index !== -1 && customerOrder.splice(index, 1);
+    localStorage.setItem('customerOrder', JSON.stringify(customerOrder));
+    updateOrderList();
+}
+
 plusFrenchToast.addEventListener('click', addFrenchToast);
 function addFrenchToast() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder")) || [];
@@ -359,7 +382,7 @@ function addToast() {
 }
 
 minusToast.addEventListener('click', subtractToast);
-function subtractToasth() {
+function subtractToast() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
     var index = customerOrder.findIndex(o => o.name === 'Toast');
     var removed = index !== -1 && customerOrder.splice(index, 1);
@@ -382,6 +405,5 @@ for (let orderItemName of customerOrder) {
 console.log(orderItems)
 orderList.innerHTML = orderItems;
 }
-
 
 window.onload = updateOrderList();

@@ -1,23 +1,22 @@
 function showOrderList() {
-    var orderList = document.querySelector('.checkoutOrder')
+    var orderList = document.querySelector('.orderList')
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
     let orderItems = '';
     for (let orderItemName of customerOrder) {
-        orderItems += '<li>' + orderItemName.name + orderItemName.price + '</li>';
+        orderItems += '<li>' + orderItemName.name + " $" + orderItemName.cost + '</li>';
     }
     console.log(orderItems)
-    console.log(customerOrder[0].price)
+    console.log(customerOrder)
     orderList.innerHTML = orderItems;
-
     }
 
 function showOrderCost() {
     var customerOrder = JSON.parse(localStorage.getItem("customerOrder"));
-    console.log(customerOrder)
-    console.log(customerOrder[0].price)
+    //console.log(customerOrder)
+    console.log(customerOrder[0].cost)
     var itemPrices = [];
     for (i = 0; i < customerOrder.length; i++) {
-        itemPrices.push(customerOrder[i].price)
+        itemPrices.push(customerOrder[i].cost)
     }
     console.log(itemPrices)
     var sum = 0 
@@ -33,7 +32,7 @@ function showOrderCost() {
     var roundedTotal = Number((withTax).toFixed(2))
     console.log(roundedTotal)
     var orderTotal = document.getElementById('orderTotal');
-    orderTotal.innerHTML = " " + roundedTotal;
+    orderTotal.innerHTML = " $" + roundedTotal;
 }
 
 window.onload = showOrderList(),
