@@ -28,7 +28,7 @@
      <div class="row"> 
         <!-- Drinks Menu   -->
         <div class="col-md-4">
-         <h2 class="text-center drinkTitle rounded-pill border border-dark border-2">DRINKS</h2>
+         <h2 class="text-center drinkTitle rounded-pill border border-dark border-2 mt-1">DRINKS</h2>
             <div class="slideshow-container">
                 <!-- Menu Items with number and Description / Price -->
                 <div class="drinkItem">
@@ -63,7 +63,7 @@
 
         <div class="col-md-4">
             <!-- Menu Container -->
-            <h2 class="text-center menuTitle rounded-pill border border-dark border-2">MAIN MENU</h2>
+            <h2 class="text-center menuTitle rounded-pill border border-dark border-2 mt-1">MAIN MENU</h2>
             <div class="slideshow-container">
                 <!-- Menu Items with number and Description / Price -->
                 <div class="menuItem">
@@ -110,12 +110,11 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
-
-
-        <!-- Sides Menu -->
+            
+         <!-- Sides Menu -->
         <div class="col-md-4">
             <!-- List of Sides Offered -->
-            <h2 class="text-center sideTitle rounded-pill border border-dark border-2">SIDES</h2>
+            <h2 class="text-center sideTitle rounded-pill border border-dark border-2 mt-1">SIDES</h2>
             <div class="slideshow-container">
             <!-- Menu Items with number and Description / Price -->
             <div class="sideItem">
@@ -143,49 +142,49 @@
             </div>
             </div>
         </div>
+    </div>
 
-        <br>
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-md-4 text-center mt-1">
+            <h2 class="text-center text-white bg-danger rounded-pill border border-dark border-2">
+                RETURN TO HOME
+            </h2>
+            <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
+            <!-- <p><em>*Press logo*</em></p> -->
+        </div>    
+             
+        <div class="col-md-4 mt-1">
+            <h2 class="text-center text-black bg-white rounded-pill border border-dark border-2">
+                YOUR PLATE
+            </h2>
 
-        <div class="row">
-            <div class="col-4 text-center mt-5">
-                <h2 class="text-center text-white bg-danger rounded-pill border border-dark border-2">
-                    RETURN TO HOME
-                </h2>
-                <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
-                <!-- <p><em>*Press logo*</em></p> -->
-            </div>
-    
-             <div class="col-4 mt-5">
-                <h2 class="text-center text-black bg-white rounded-pill border border-dark border-2">
-                    YOUR PLATE
-                </h2>
-
-                <div class="text-center cart">
-                    <img src="images/your-current-plate.png">
-                    <div class="centered">
-                        <ul class="orderList"></ul>
-                    </div>
+            <div class="text-center cart">
+                <img src="images/your-current-plate.png">
+                <div class="centered">
+                 <ul class="orderList"></ul>
                 </div>
             </div>
+        </div>
     
-            <div class="col-4 mt-5">
-                <h2 class="text-center text-white rounded-pill border border-dark border-2" id="whoscooking">WHO'S COOKING?</h2>
-                <div id="staff">
-                    <!-- Uses Employee Table(?) to Display Current Chefs. Will be implemented future -->
-                    <ul class="text-center" id="staffList">
-                        <li class="bacon">Joshua Toback</li>
-                        <li class="meat">David Stewart</li>
-                        <li class="fryingpan">Julia Johnson</li>
-                        <li class="knife">Josh Icard</li>
-                        <li class="chef">Mark Turner</li>
-                    </ul>
-                </div>
-                <div class="text-center" id="finishOrder">
-                    <button type="button" class="btn-lg" id="checkOut">
-                        <!-- Calls function checkOut() to create Order Table and move to checkout.html -->
-                        <a href="./checkout.html">Check Out</a>
-                    </button>
-                </div>
+        <div class="col-md-4 mt-1">
+            <h2 class="text-center text-white rounded-pill border border-dark border-2" id="whoscooking">WHO'S COOKING?</h2>
+            <div id="staff">
+             <!-- Uses Employee Table(?) to Display Current Chefs. Will be implemented future -->
+                <ul class="text-center" id="staffList">
+                    <li class="bacon">Joshua Toback</li>
+                    <li class="meat">David Stewart</li>
+                    <li class="fryingpan">Julia Johnson</li>
+                    <li class="knife">Josh Icard</li>
+                    <li class="chef">Mark Turner</li>
+                </ul>
+            </div>
+
+            <div class="text-center" id="finishOrder">
+                <button type="button" class="btn-lg" id="checkOut">
+                 <!-- Calls function checkOut() to create Order Table and move to checkout.html -->
+                 <a href="./checkout.html">Check Out</a>
+                </button>
             </div>
         </div>
     </div>
