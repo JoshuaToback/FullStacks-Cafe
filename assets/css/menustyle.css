@@ -73,6 +73,20 @@ body {
   transition: auto 0.2s;
 }
 
+/* Button Styling */
+.removeItem {
+  background-color: red;
+  color: white;
+  border-radius: 30%;
+  width: 10%;
+}
+
+.addItem {
+  background-color: green;
+  color: white;
+  border-radius: 30%;
+  width: 10%;
+}
 
 /* Drink Styling */
 .drinkTitle {
@@ -95,6 +109,42 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 
 }
+
+.drinkItem .text,
+.menuItem .text,
+.sideItem .text {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+}
+
+.drinkTitle,
+.menuTitle,
+.sideTitle,
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
+}
+
+a {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1em;
+}
+
+.orderList {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1em;
+}
+
+#staffList {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
 
 
 /* Side Images */
@@ -153,7 +203,6 @@ body {
   font-weight: bold;
   font-size: 20px;
   padding: 8px 12px;
-  position: absolute;
   width: 100%;
   text-align: center;
 }
@@ -168,12 +217,26 @@ body {
   top: 0;
 }
 
+.cart {
+  position: relative;
+  text-align: center;
+}
+
 
 .cart img {
   width: auto;
   height: 350px;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Checkout Stylings */
 #checkOut{
   margin-top: 20px;
   margin-bottom: 20px;

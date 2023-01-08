@@ -7,10 +7,46 @@ h1, h3, h4{
     text-shadow: 3px 2px 5px white;
 }
 
+.orderList {
+  list-style: none !important;
+}
+
 h1::before,
 h1::after {
     content:" 📜 ";
 
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
+  font-size: 3em;
+}
+
+#review {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+ul {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1em;
+}
+
+h4 {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+}
+
+.orderList {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 1em;
+  }
+
+
+.btn {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
 }
 
 .row {

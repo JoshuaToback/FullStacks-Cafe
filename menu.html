@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
      <link rel="stylesheet" href="assets/css/menustyle.css">
     <title>Menu</title>
 </head>
@@ -24,29 +28,30 @@
      <div class="row"> 
         <!-- Drinks Menu   -->
         <div class="col-md-4">
-         <h2 class="text-center drinkTitle rounded-pill border border-dark border-2">DRINKS</h2>
+         <h2 class="text-center drinkTitle rounded-pill border border-dark border-2 mt-1">DRINKS</h2>
             <div class="slideshow-container">
                 <!-- Menu Items with number and Description / Price -->
                 <div class="drinkItem">
-                     <div class="numbertext">1 / 3</div>
-
                      <img class='rounded-circle border border-white rounded-lg' src="images/Coffee.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Coffee | $2.39</div>
+                    <div class="text mt-1 border border-dark border-2" >
+                        <input type="button" id="minus-coffee-button" class="removeItem" value="-"><em class="p-2">Coffee | $2.39</em><input type="button" id="plus-coffee-button" class="addItem" value="+">
+                    </div>
 
                 </div>
 
                 <div class="drinkItem"> 
-                    <div class="numbertext">2 / 3</div>
                     <img class='rounded-circle border border-white rounded-lg' src="images/OrangeJuice.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Orange Juice | $1.99</div>
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-Oj-button" class="removeItem" value="-"><em class="p-2">Orange Juice | $1.99</em><input type="button" id="plus-Oj-button" class="addItem" value="+">
+                    </div>
 
                 </div>
 
                 <div class="drinkItem">
-                    <div class="numbertext">3 / 3</div>
-
-                    <img  class='rounded-circle border border-white rounded-lg' src="images/Milk.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Milk | 1.99</div>
+                    <img class='rounded-circle border border-white rounded-lg' src="images/Milk.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-milk-button" class="removeItem" value="-"><em class="p-2">Milk | $1.99</em><input type="button" id="plus-milk-button" class="addItem" value="+">
+                    </div>
 
                 </div>
 
@@ -58,70 +63,78 @@
 
         <div class="col-md-4">
             <!-- Menu Container -->
-            <h2 class="text-center menuTitle rounded-pill border border-dark border-2">MAIN MENU</h2>
+            <h2 class="text-center menuTitle rounded-pill border border-dark border-2 mt-1">MAIN MENU</h2>
             <div class="slideshow-container">
                 <!-- Menu Items with number and Description / Price -->
                 <div class="menuItem">
-                    <div class="numbertext">1 / 6</div>
-                     <img class='rounded-circle border border-white rounded-lg' src="images/Eggs.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Scrambled Eggs | $6.99</div>
+                    <img class='rounded-circle border border-white rounded-lg' src="images/Eggs.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-eggs-button" class="removeItem" value="-"><em class="p-2">Scrambled Eggs | $6.99</em><input type="button" id="plus-eggs-button" class="addItem" value="+">
+                    </div>
                 </div>
 
                 <div class="menuItem">
-                    <div class="numbertext">2 / 6</div>
                      <img class='rounded-circle border border-white rounded-lg' src="images/GravyAndBiscuits.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Gravy and Biscuits | $5.99</div>
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-gravy-button" class="removeItem" value="-"><em class="p-2">Gravy and Biscuits | $5.99</em><input type="button" id="plus-gravy-button" class="addItem" value="+">
+                    </div>
                 </div>
                 <div class="menuItem">
-                    <div class="numbertext">3 / 6</div>
-                     <img  class='rounded-circle border border-white rounded-lg' src="images/AvacadoToast.jpeg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Avacado Toast | 11.99</div>
+                     <img class='rounded-circle border border-white rounded-lg' src="images/AvacadoToast.jpeg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-AvaToast-button" class="removeItem" value="-"><em class="p-2">Avacado Toast | 11.99</em><input type="button" id="plus-AvaToast-button" class="addItem" value="+">
+                    </div>
                 </div>
                     <div class="menuItem">
-                    <div class="numbertext">4 / 6</div>
-                     <img  class='rounded-circle border border-white rounded-lg' src="images/Pancakes.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Pancakes | 9.99</div>
+                     <img class='rounded-circle border border-white rounded-lg' src="images/Pancakes.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-pancakes-button" class="removeItem" value="-"><em class="p-2">Pancakes | 9.99</em><input type="button" id="plus-pancakes-button" class="addItem" value="+">
+                    </div>
 
                 </div>
                 <div class="menuItem">
-                    <div class="numbertext">5 / 6</div>
-                     <img  class='rounded-circle border border-white rounded-lg' src="images/FrenchToast.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">French Toast | 8.99</div>
+                     <img class='rounded-circle border border-white rounded-lg' src="images/FrenchToast.jpg" style="width:100%">
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-FrenchToast-button" class="removeItem" value="-"><em class="p-2">French Toast | 8.99</em><input type="button" id="plus-FrenchToast-button" class="addItem" value="+">
+                    </div>
 
                 </div>
                 <div class="menuItem">
-                    <div class="numbertext">6 / 6</div>
-
                      <img  class='rounded-circle border border-white rounded-lg' src="images/Omelette.jpg" style="width:100%">
-                    <div class="text mt-1 border border-dark border-2">Omelette | 14.99</div>
+                    <div class="text mt-1 border border-dark border-2">
+                        <input type="button" id="minus-Omelette-button" class="removeItem" value="-"><em class="p-2">Omelette | 14.99</em><input type="button" id="plus-Omelette-button" class="addItem" value="+">
+                    </div>
                 </div>
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
-
-
-        <!-- Sides Menu -->
+            
+         <!-- Sides Menu -->
         <div class="col-md-4">
             <!-- List of Sides Offered -->
-            <h2 class="text-center sideTitle rounded-pill border border-dark border-2">SIDES</h2>
+            <h2 class="text-center sideTitle rounded-pill border border-dark border-2 mt-1">SIDES</h2>
             <div class="slideshow-container">
             <!-- Menu Items with number and Description / Price -->
             <div class="sideItem">
-                <div class="numbertext">1 / 3</div>
                  <img class='rounded-circle border border-white rounded-lg' src="images/HashBrown.jpg" style="width:100%">
-                <div class="text mt-1 border border-dark border-2">Hashbrowns | $2.39</div>
+                <div class="text mt-1 border border-dark border-2">
+                    <input type="button" id="minus-Hash-button" class="removeItem" value="-"><em class="p-2">Hashbrowns | $2.39</em><input type="button" id="plus-Hash-button" class="addItem" value="+">
+                    
+                </div>
             </div>
             <div class="sideItem">
-                <div class="numbertext">2 / 3</div>
                  <img class='rounded-circle border border-white rounded-lg' src="images/Bacon.jpg" style="width:100%">
-                <div class="text mt-1 border border-dark border-2">Bacon | $2.99</div>
+                <div class="text mt-1 border border-dark border-2">
+                    <input type="button" id="minus-bacon-button" class="removeItem" value="-"><em class="p-2">Bacon | $2.99</em><input type="button" id="plus-bacon-button" class="addItem" value="+">
+                </div>
             </div>
             <div class="sideItem">
-                <div class="numbertext">3 / 3</div>
-                 <img  class='rounded-circle border border-white rounded-lg' src="images/Toast.jpg" style="width:100%">
-                <div class="text mt-1 border border-dark border-2">Toast | 1.99</div>
+                 <img class='rounded-circle border border-white rounded-lg' src="images/Toast.jpg" style="width:100%">
+                <div class="text mt-1 border border-dark border-2">
+                    <input type="button" id="minus-Toast-button" class="removeItem" value="-"><em class="p-2">Toast | 1.99</em><input type="button" id="plus-Toast-button" class="addItem" value="+">
+                </div>
             </div>
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSides(-1)">&#10094;</a>
@@ -129,44 +142,49 @@
             </div>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-4 text-center mt-5">
-                <h2 class="text-center text-white bg-danger rounded-pill border border-dark border-2">
-                    RETURN TO HOME
-                </h2>
-                <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
-                <p><em>*Press logo*</em></p>
-            </div>
-    
-             <div class="col-4 mt-5">
-                <h2 class="text-center text-black bg-white rounded-pill border border-dark border-2">
-                    YOUR PLATE
-                </h2>
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-md-4 text-center mt-1">
+            <h2 class="text-center text-white bg-danger rounded-pill border border-dark border-2">
+                RETURN TO HOME
+            </h2>
+            <a href="./home.html"><img src="./images/FullStacksLogo.png"></a>
+            <!-- <p><em>*Press logo*</em></p> -->
+        </div>    
+             
+        <div class="col-md-4 mt-1">
+            <h2 class="text-center text-black bg-white rounded-pill border border-dark border-2">
+                YOUR PLATE
+            </h2>
 
-                <div class="text-center cart">
-                    <img src="images/your-current-plate.png">
+            <div class="text-center cart">
+                <img src="images/your-current-plate.png">
+                <div class="centered">
+                 <ul class="orderList"></ul>
                 </div>
             </div>
+        </div>
     
-            <div class="col-4 mt-5">
-                <h2 class="text-center text-white rounded-pill border border-dark border-2" id="whoscooking">WHO'S COOKING?</h2>
-                <div id="staff">
-                    <!-- Uses Employee Table(?) to Display Current Chefs. Will be implemented future -->
-                    <ul class="text-center" id="staffList">
-                        <li class="bacon">Joshua Toback</li>
-                        <li class="meat">David Stewart</li>
-                        <li class="fryingpan">Julia Johnson</li>
-                        <li class="knife">Josh Icard</li>
-                        <li class="chef">Mark Turner</li>
-                    </ul>
-                </div>
-                <div class="text-center" id="finishOrder">
-                    <button type="button" class="btn-lg" id="checkOut">
-                        <!-- Calls function checkOut() to create Order Table and move to checkout.html -->
-                        <a href="./checkout.html">Check Out</a>
-                    </button>
-                </div>
+        <div class="col-md-4 mt-1">
+            <h2 class="text-center text-white rounded-pill border border-dark border-2" id="whoscooking">WHO'S COOKING?</h2>
+            <div id="staff">
+             <!-- Uses Employee Table(?) to Display Current Chefs. Will be implemented future -->
+                <ul class="text-center" id="staffList">
+                    <li class="bacon">Joshua Toback</li>
+                    <li class="meat">David Stewart</li>
+                    <li class="fryingpan">Julia Johnson</li>
+                    <li class="knife">Josh Icard</li>
+                    <li class="chef">Mark Turner</li>
+                </ul>
+            </div>
+
+            <div class="text-center" id="finishOrder">
+                <button type="button" class="btn-lg" id="checkOut">
+                 <!-- Calls function checkOut() to create Order Table and move to checkout.html -->
+                 <a href="./checkout.html">Check Out</a>
+                </button>
             </div>
         </div>
     </div>
