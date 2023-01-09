@@ -1,8 +1,6 @@
 var team = {
     "members": [
-        {
-            "name": "🍳 Julia Johnson 🍳"
-        },
+
         {
             "name": "🥩 David Stewart 🥩"
         },
@@ -11,6 +9,9 @@ var team = {
         },
         {
             "name": "🔪 Josh Icard 🔪"
+        },
+        {
+            "name": "🍳 Julia Johnson 🍳"
         },
         {
             "name": "👨‍🍳 Mark Turner 👨‍🍳"
