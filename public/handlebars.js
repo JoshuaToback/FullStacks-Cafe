@@ -1,19 +1,19 @@
 var team = {
     "members": [
         {
-            "name": "Julia Johnson"
+            "name": "🍳 Julia Johnson 🍳"
         },
         {
-            "name": "David Stewart"
+            "name": "🥩 David Stewart 🥩"
         },
         {
-            "name": "Josh Toback"
+            "name": "🥓 Josh Toback 🥓"
         },
         {
-            "name": "Josh Icard"
+            "name": "🔪 Josh Icard 🔪"
         },
         {
-            "name": "Mark Turner"
+            "name": "👨‍🍳 Mark Turner 👨‍🍳"
         },
     ]
 }
@@ -22,6 +22,6 @@ $(document).ready(function(){
     var teamTemplate = $("#members-template").html();
 
     var compiledTeamTemplate = Handlebars.compile(teamTemplate);
-    $(".members-list-container").html(compiledTeamTemplate(team.members[0]))
+    $(".members-list-container").html(compiledTeamTemplate(team))
 
 });
