@@ -1,4 +1,4 @@
-const { Members } = require{'../models'};
+const { Members } = require('../models');
 
 const membersdata = [
     {
@@ -18,6 +18,6 @@ const membersdata = [
     }
 ];
 
-const seedGallery = () => Members.bulkCreate(membersdata);
+const seedMembers = () => Members.bulkCreate(membersdata);
 
 module.exports = seedMembers;
