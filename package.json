@@ -2,12 +2,12 @@
   "name": "fullstacks-cafe",
   "version": "1.0.0",
   "engines": {
-    "node": "18.12",
+    "node": "18.x",
     "npm": "9.2.0"
   },
   "description": "Fullstack team project",
   "main": "manager.js",
-  "devDependencies": {
+  "dependencies": {
     "bcrypt": "^5.1.0",
     "chalk": "^4.1.2",
     "connect-session-sequelize": "^7.1.5",
@@ -45,8 +45,5 @@
   "bugs": {
     "url": "https://github.com/JoshuaToback/FullStacks-Cafe/issues"
   },
-  "homepage": "https://github.com/JoshuaToback/FullStacks-Cafe#readme",
-  "dependencies": {
-    "node": "^19.3.0"
-  }
+  "homepage": "https://github.com/JoshuaToback/FullStacks-Cafe#readme"
 }
