@@ -45,8 +45,13 @@ h4 {
 .orderList {
     font-family: 'Patrick Hand SC', cursive;
     font-size: 1em;
+    margin-left: -32px;
   }
 
+p {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 2em;
+  }
 
 .btn {
   font-family: 'Patrick Hand SC', cursive;
