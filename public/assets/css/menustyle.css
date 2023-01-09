@@ -34,6 +34,10 @@ body {
   position: relative;
 }
 
+#menuheader{
+  box-shadow: 0px 10px 10px 0px #555;
+}
+
 #plate{
     height: 400px;
 }
