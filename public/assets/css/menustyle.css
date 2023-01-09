@@ -75,17 +75,21 @@ body {
 
 /* Button Styling */
 .removeItem {
-  background-color: red;
+  background-image: linear-gradient(silver,black,silver);
   color: white;
   border-radius: 30%;
   width: 10%;
+  padding: 0 0 5.5px 0;
+  margin-right: 10px;
 }
 
 .addItem {
-  background-color: green;
+  background-image: linear-gradient(silver,black,silver);
   color: white;
   border-radius: 30%;
   width: 10%;
+  padding: 0 0 5.5px 0;
+  margin-left: 10px;
 }
 
 /* Drink Styling */
