@@ -1,7 +1,7 @@
 {
   "name": "fullstacks-cafe",
   "version": "1.0.0",
-  "engines": { "node": "18.0.0", "npm": "9.2.0"},
+  "engines": { "node": "18.x", "npm": "9.2.0"},
   "description": "Fullstack team project",
   "main": "manager.js",
   "devDependencies": {
