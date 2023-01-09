@@ -47,9 +47,14 @@
               <p>Your total is:<span id="orderTotal"></span></p>
           </div>
             <div>
-              <button type="submit" class="btn btn-success btn-lg border border-dark border-2 mt-3" id="placeOrder">Confirm Order</button>
+              <button type="submit" onclick="myFunction()" class="btn btn-success btn-lg border border-dark border-2 mt-3" id="placeOrder">Confirm Order</button>
             </div>
           </div>
+          <script>
+            function myFunction() {
+              alert("Your order has been sent to the kitchen!");
+            }
+            </script>
           
 
         <footer class="footer_section">
