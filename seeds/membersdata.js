@@ -1,20 +1,22 @@
 const { Members } = require('../models');
 
 const membersdata = [
+    
+   
     {
-        name: 'Joshua Toback',
+        name: 'Julia Johnson',
     },
     {
         name: 'David Stewart',
+    },
+    {
+        name: 'Joshua Toback',
     },
     {
         name: 'Josh Icard',
     },
     {
         name: 'Mark Turner',
-    },
-    {
-        name: 'Julia Johnson',
     }
 ];
 
