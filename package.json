@@ -1,10 +1,12 @@
 {
-  "scripts": {
-    "start": "node server.js",
-    "seed": "node ./seeds/index.js",
-    "manager": "node manager.js"
-  },
+  "name": "fullstacks-cafe",
+  "version": "1.0.0",
+  "description": "Fullstack team project",
+  "main": "manager.js",
   "dependencies": {
+    
+  },
+  "devDependencies": {
     "bcrypt": "^5.1.0",
     "chalk": "^4.1.2",
     "connect-session-sequelize": "^7.1.5",
@@ -17,14 +19,31 @@
     "figlet": "^1.5.2",
     "fs": "^0.0.1-security",
     "handlebars": "^4.7.7",
-    "heroku": "^7.67.1",
-    "inquirer": "^8.0.0",
+    "heroku": "^7.7.8",
+    "inquirer": "^8.2.5",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "node": "^19.3.0",
+    "node": "^18.13.0",
     "path": "^0.12.7",
+    "printf": "^0.6.1",
     "sequelize": "^6.28.0",
     "uniqid": "^5.4.0",
     "uuid": "^7.0.3"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node ./seeds/index.js",
+    "manager": "node manager.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaToback/FullStacks-Cafe.git"
+  },
+  "author": "J3DM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaToback/FullStacks-Cafe/issues"
+  },
+  "homepage": "https://github.com/JoshuaToback/FullStacks-Cafe#readme"
 }

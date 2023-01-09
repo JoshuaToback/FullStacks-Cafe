@@ -34,8 +34,16 @@ body {
   position: relative;
 }
 
+#menuheader{
+  box-shadow: 0px 10px 10px 0px #555;
+}
+
 #plate{
     height: 400px;
+}
+
+#yourplate{
+  margin-left: 30px;
 }
 
 #orderList {
@@ -75,17 +83,21 @@ body {
 
 /* Button Styling */
 .removeItem {
-  background-color: red;
+  background-image: linear-gradient(silver,black,silver);
   color: white;
   border-radius: 30%;
   width: 10%;
+  padding: 0 0 5.5px 0;
+  margin-right: 10px;
 }
 
 .addItem {
-  background-color: green;
+  background-image: linear-gradient(silver,black,silver);
   color: white;
   border-radius: 30%;
   width: 10%;
+  padding: 0 0 5.5px 0;
+  margin-left: 10px;
 }
 
 /* Drink Styling */
@@ -145,8 +157,6 @@ a {
   font-size: 1.5em;
 }
 
-
-
 /* Side Images */
 .sideTitle {
   background-color: rgba(227, 178, 0, 0.7);
@@ -168,6 +178,10 @@ a {
 
 }
 
+#shadowlogo img:hover{
+  box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.19)
+}
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -176,12 +190,11 @@ a {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -60px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
@@ -205,6 +218,7 @@ a {
   padding: 8px 12px;
   width: 100%;
   text-align: center;
+  border-radius: 5px;
 }
 
 /* Number text (1/3 etc) */
@@ -240,6 +254,7 @@ a {
 #checkOut{
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 30px;
   background-color: goldenrod;
   color: white;
   font-size: 40px;
@@ -257,36 +272,6 @@ a {
 
 #whoscooking{
   background-color: gray;
-}
-
-.bacon::before,
-.bacon::after {
-    content:" 🥓 ";
-
-}
-
-.meat::before,
-.meat::after {
-    content:" 🥩 ";
-
-}
-
-.fryingpan::before,
-.fryingpan::after {
-    content:" 🍳 ";
-
-}
-
-.knife::before,
-.knife::after {
-    content:" 🔪 ";
-
-}
-
-.chef::before,
-.chef::after {
-    content:" 👨‍🍳 ";
-
 }
 
 /* Fading animation */
