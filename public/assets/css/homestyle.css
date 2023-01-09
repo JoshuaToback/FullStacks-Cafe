@@ -109,31 +109,31 @@ div#carousel {
     --offset: 1;
     background-image: linear-gradient(rgb(236, 213, 183),yellow,rgb(236, 213, 183));
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(2) {
     --offset: 2;
     background-image: linear-gradient(rgb(101, 101, 231),rgb(236, 213, 183),rgb(101, 101, 231));
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(3) {
     --offset: 3;
     background-image: linear-gradient(rgb(226, 111, 99),rgb(236, 213, 183),rgb(226, 111, 99));
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(4) {
     --offset: 4;
     background-color: #ffd670;
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(5) {
     --offset: 5;
     background-color: #e9ff70;
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 20px;
   }
   
   input:nth-of-type(1) {
@@ -179,6 +179,7 @@ div#carousel {
   #carousel img {
     width: 290px;
     height: 390px;
+    border-radius: 15px;
   }
 
   .row {
