@@ -38,6 +38,10 @@ body {
     height: 400px;
 }
 
+#yourplate{
+  margin-left: 30px;
+}
+
 #orderList {
   position: absolute;
   top: 50%;
@@ -244,6 +248,7 @@ a {
 #checkOut{
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 30px;
   background-color: goldenrod;
   color: white;
   font-size: 40px;
