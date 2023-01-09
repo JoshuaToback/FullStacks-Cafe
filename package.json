@@ -1,7 +1,10 @@
 {
   "name": "fullstacks-cafe",
   "version": "1.0.0",
-  "engines": { "node": "18.x", "npm": "9.2.0"},
+  "engines": {
+    "node": "18.12",
+    "npm": "9.2.0"
+  },
   "description": "Fullstack team project",
   "main": "manager.js",
   "devDependencies": {
@@ -42,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/JoshuaToback/FullStacks-Cafe/issues"
   },
-  "homepage": "https://github.com/JoshuaToback/FullStacks-Cafe#readme"
+  "homepage": "https://github.com/JoshuaToback/FullStacks-Cafe#readme",
+  "dependencies": {
+    "node": "^19.3.0"
+  }
 }
