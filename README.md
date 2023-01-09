@@ -9,6 +9,8 @@ Screenshot of application:
 ## Description
 This full stack application serves as an ordering system for a cafe. This MVP iteration works as an ordering app on in-house kiosks at each table, customers can select their order and send it  to the kitchen where each order can veviewd on a command line interface system. This application is scalable to become a full service online ordering website and menu page, as well as being tied in to an automated ticket printer.
 
+![Image](./public/images/readmephoto.png)
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
