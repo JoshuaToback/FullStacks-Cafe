@@ -1,6 +1,6 @@
 body {
    /* background-color: lightblue; */
-   background-image: linear-gradient(rgb(101, 101, 231),rgb(236, 213, 183));
+   background-image: linear-gradient(rgb(236, 213, 183),rgb(101, 101, 231));
    width: 100%;
    height: 100%;
    }
