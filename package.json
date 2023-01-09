@@ -1,7 +1,7 @@
 {
   "name": "fullstacks-cafe",
   "version": "1.0.0",
-  "engines": { "node": "19.4.0", "npm": "9.2.0"},
+  "engines": { "node": "18.0.0", "npm": "9.2.0"},
   "description": "Fullstack team project",
   "main": "manager.js",
   "devDependencies": {
@@ -21,7 +21,6 @@
     "inquirer": "^8.2.5",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "node": "^19.4.0",
     "path": "^0.12.7",
     "printf": "^0.6.1",
     "sequelize": "^6.28.0",
